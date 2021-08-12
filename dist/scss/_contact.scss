@@ -1,0 +1,35 @@
+.contact {
+    height: 100%;
+    padding-top: 35vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, rgba(#272727 , 0.9), rgba(#292929, 0.3)),
+     url(../img/florian-olivo-JNz9bQD3Oio-unsplash.jpg) center top;
+    background-size: cover;
+
+    h2 {
+        font-size: 3.9rem;
+        margin-bottom: 3rem;
+    }   
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .social-icons {
+        position: initial;
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+    
+    i {
+    padding-right: 5px;
+    padding-bottom: 2px;
+    }
+
+}
