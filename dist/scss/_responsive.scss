@@ -1,3 +1,8 @@
+body {
+    @media (max-width: 768px) {
+        font-size: 60%;
+    }
+}
 @include media-md {
     /*.menu-btn {
         visibility: hidden;
@@ -26,10 +31,6 @@
        }
     } */
 
-    .about__bio {
-        font-size: 3rem;
-    }
-
 
 
     .skills {
@@ -40,7 +41,7 @@
             grid-template-columns: repeat(2, 1fr);
         }
         .text-secondary {
-            font-size: 3rem;
+            font-size: 1.5em;
         }
 
     }
@@ -53,9 +54,7 @@
 
 
 @include media-lg {
-    .about__bio {
-        font-size: 5rem;
-    }
+    
 
     .skills {
         &__items {
