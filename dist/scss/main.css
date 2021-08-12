@@ -1,3 +1,41 @@
+@-webkit-keyframes dancing {
+  0% {
+    -webkit-transform: skewX(0);
+            transform: skewX(0);
+  }
+  25% {
+    -webkit-transform: skewX(0.1rad);
+            transform: skewX(0.1rad);
+  }
+  75% {
+    -webkit-transform: skewX(-0.1rad);
+            transform: skewX(-0.1rad);
+  }
+  100% {
+    -webkit-transform: skewX(0);
+            transform: skewX(0);
+  }
+}
+
+@keyframes dancing {
+  0% {
+    -webkit-transform: skewX(0);
+            transform: skewX(0);
+  }
+  25% {
+    -webkit-transform: skewX(0.1rad);
+            transform: skewX(0.1rad);
+  }
+  75% {
+    -webkit-transform: skewX(-0.1rad);
+            transform: skewX(-0.1rad);
+  }
+  100% {
+    -webkit-transform: skewX(0);
+            transform: skewX(0);
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -168,7 +206,7 @@
 }
 
 .about__bio-image {
-  height: 40vh;
+  height: 30vh;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/florian-olivo-JNz9bQD3Oio-unsplash.jpg) center top;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/florian-olivo-JNz9bQD3Oio-unsplash.jpg) center top;
@@ -189,7 +227,7 @@
 }
 
 .about__bio-image p {
-  margin-bottom: 2rem;
+  margin: bottom 0.8em;
   font-size: 1.4em;
 }
 
@@ -238,13 +276,40 @@
 }
 
 .about .jobs__job p {
-  font-size: 1.2em;
+  font-size: 1.4em;
+}
+
+.about__bio-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .about__bio-image .about__bio {
+    font-size: 90%;
+  }
 }
 
 @media (max-width: 768px) {
   .about .jobs {
     width: 75vw;
     font-size: 1.7em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about .jobs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -258,6 +323,11 @@
 @media (max-width: 768px) {
   .about .jobs__job {
     font-size: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about .jobs__job {
     margin: 2em 0;
   }
 }
@@ -411,6 +481,13 @@
 .contact i {
   padding-right: 5px;
   padding-bottom: 2px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.contact .dancing {
+  -webkit-animation: dancing 2s ease-in-out infinite;
+          animation: dancing 2s ease-in-out infinite;
 }
 
 body {

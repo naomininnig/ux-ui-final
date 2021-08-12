@@ -30,6 +30,10 @@
     i {
     padding-right: 5px;
     padding-bottom: 2px;
+    transform-origin: bottom;
     }
 
+    .dancing{
+        animation: dancing 2s ease-in-out infinite;
+    } 
 }

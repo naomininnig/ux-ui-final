@@ -1,11 +1,11 @@
-@import 'responsive'; 
+@import 'responsive';
+@import 'animations';
 @import 'config';
 @import 'home';
 @import 'menu';
 @import 'about';
 @import 'skills';
 @import 'contact';
-
 body {
     background: $primary-color;
     color: white;
@@ -19,7 +19,7 @@ body {
         font-size: 69%;
     }
     @media (max-width: 1600px) {
-        font-size: 90%;
+        font-size: 90%; 
     }
 }
 

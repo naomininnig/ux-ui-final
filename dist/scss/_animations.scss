@@ -1,0 +1,14 @@
+@keyframes dancing {
+	0%{
+		transform:  skewX(0);
+	}
+	25%{
+		transform:  skewX(.1rad);
+	}
+	75%{
+		transform:  skewX(-.1rad);
+	}
+	100%{
+		transform:  skewX(0);
+	}
+}
