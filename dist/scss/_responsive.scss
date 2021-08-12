@@ -1,63 +1,33 @@
-/*@include media-md {
-    /*.menu-btn {
-        visibility: hidden;
+//Home
+//Nothing to be done yet
+
+//About
+@mixin jobsMQ{
+    @media  (max-width:768px) {
+        width: 75vw;
+        font-size: 1.7em;
+        flex-direction: column;
+        justify-content: center;
     }
-
-    .nav {
-       visibility: visible; 
-       opacity: 1;
-
-       .menu-nav {
-           
-           display: block;
-           transform: translateY(0);
-           height: 100%;
-           background: transparent;
-           text-align: right;
-
-           &__item {
-               display: inline;
-               padding-right: 1.5rem;
-           }
-
-           &__link {
-               font-size: 1.5rem;
-           }
-       }
-    } */
-
-
-
-    .skills {
-        &__bio-img {
-            @media (max-width:768px) {
-                height: 40vh;   
-            }
-        }
-        &__items {
-            @media (max-width:768px){
-            grid-template-columns: repeat(2, 1fr);
+    &__job{
+        @media  (max-width:768px) {
+            font-size: 50%;
+            margin:2em 0;
         }
     }
-        .text-secondary {
-            @media (max-width:768px) {
-                font-size: 1.5em;
-            }
+}
+
+//Skills
+@mixin skillsMQ{
+    &__items{
+        @media (max-width:768px){
+            grid-template-columns:repeat(1, 1fr) ;
+            grid-template-rows:repeat(6, 1fr) ;
+        }     
+        @media (min-width:768px) and (max-width:1024px){
+            grid-template-columns:repeat(2, 1fr) ;
+            grid-template-rows:repeat(3, 1fr) ;
         }
     }
-    
-    .contact__list {
-        @media (max-width:768px) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-
-
-    .skills {
-        &__items {
-            @media (max-width:1024px) {
-               grid-template-columns: repeat(3, 1fr);
-            }
-        }
-    }
+}
+//Contact Me

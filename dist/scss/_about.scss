@@ -26,62 +26,37 @@
             padding-bottom: 1rem;
             font-size: 2em;
         }
-       
     }
 
     .jobs {
         width: 80vw;
         margin: 2rem auto 0 auto;
-        /*
-        display: grid;
-        grid-template-rows:1fr !important;
-        grid-template-columns:repeat(3,1fr) !important ;
-        gap: 2rem;
-        */
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
-        @media  (max-width:768px) {
-            width: 75vw;
-            font-size: 1.7em;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        
-        
-        
 
         &__job {
             background: lighten(#272727, 10%);
             padding: 0.5rem;
             border-bottom: 5px solid #ff652f;
             margin: 0 2em;
-
+            
+            
             h2, h3 {
                 margin: 0.5rem 0;
             }
-
+            
             h6 {
                 margin: 0.3rem 0;
                 font-size: 1em;
             }
-
+            
             p {
                 font-size: 1.2em;
             }
-
-            @media  (max-width:768px) {
-                font-size: 50%;
-                margin:2em 0;
-    
-            }
         }
+        @include jobsMQ();
     }
     
 }

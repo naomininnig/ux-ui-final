@@ -1,11 +1,10 @@
+@import 'responsive'; 
 @import 'config';
 @import 'home';
 @import 'menu';
 @import 'about';
 @import 'skills';
 @import 'contact';
-@import 'responsive';
-
 
 body {
     background: $primary-color;
@@ -22,7 +21,6 @@ body {
     @media (max-width: 1600px) {
         font-size: 90%;
     }
-   
 }
 
 h1, h2, h3 {
@@ -47,7 +45,6 @@ header {
     z-index: 2;
     width: 100%;
     padding: 1rem;
-    
 }
 
 main {
@@ -80,3 +77,4 @@ footer {
     padding: 1rem;
     color: set-text-color($primary-color);
 }
+
