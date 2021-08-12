@@ -306,6 +306,21 @@
   }
 }
 
+@media (min-width: 1032px) {
+  .about__bio-image {
+    height: 50vh;
+  }
+  .about__bio-image .about__bio {
+    font-size: 90%;
+  }
+  .about__bio-image .about__bio .text-secondary {
+    font-size: 3em;
+  }
+  .about__bio-image .about__bio p {
+    font-size: 2em;
+  }
+}
+
 @media (max-width: 768px) {
   .about .jobs {
     width: 75vw;

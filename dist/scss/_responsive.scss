@@ -9,10 +9,26 @@
         line-height: 1;
         text-align: justify;
         
+        
     }
     @media  (max-width:768px) {
     &__bio-image{
         .about__bio{
+            font-size: 90%;
+        }
+    }
+}
+
+@media  (min-width:1032px) {
+    &__bio-image{
+        height: 50vh;
+        .about__bio{
+            .text-secondary {
+                font-size: 3em;
+            }
+            p {
+                font-size: 2em;
+            }
             font-size: 90%;
         }
     }
