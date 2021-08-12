@@ -1,4 +1,4 @@
-@include media-md {
+/*@include media-md {
     /*.menu-btn {
         visibility: hidden;
     }
@@ -30,30 +30,34 @@
 
     .skills {
         &__bio-img {
-            height: 40vh;
+            @media (max-width:768px) {
+                height: 40vh;   
+            }
         }
         &__items {
+            @media (max-width:768px){
             grid-template-columns: repeat(2, 1fr);
         }
+    }
         .text-secondary {
-            font-size: 1.5em;
+            @media (max-width:768px) {
+                font-size: 1.5em;
+            }
         }
-
     }
     
     .contact__list {
-        grid-template-columns: repeat(2, 1fr);
+        @media (max-width:768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
-}
 
 
-
-@include media-lg {
-    
 
     .skills {
         &__items {
-            grid-template-columns: repeat(3, 1fr);
+            @media (max-width:1024px) {
+               grid-template-columns: repeat(3, 1fr);
+            }
         }
     }
-}

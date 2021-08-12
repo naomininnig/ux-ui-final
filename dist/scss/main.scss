@@ -14,8 +14,15 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
     @media (max-width: 768px) {
-        font-size: 60%;
+        font-size: 45%;
     }
+    @media (max-width: 1024px) {
+        font-size: 69%;
+    }
+    @media (max-width: 1600px) {
+        font-size: 90%;
+    }
+   
 }
 
 h1, h2, h3 {

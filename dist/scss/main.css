@@ -200,7 +200,7 @@
 
 .about__bio .text-secondary {
   padding-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 .about .jobs {
@@ -259,7 +259,7 @@
 
 .about .jobs__job h6 {
   margin: 0.3rem 0;
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .about .jobs__job p {
@@ -404,8 +404,8 @@
   padding-bottom: 2px;
 }
 
-@media (min-width: 768px) {
-  /*.menu-btn {
+/*@include media-md {
+    /*.menu-btn {
         visibility: hidden;
     }
 
@@ -431,29 +431,33 @@
            }
        }
     } */
-  .about__bio {
-    font-size: 3rem;
-  }
+@media (max-width: 768px) {
   .skills__bio-img {
     height: 40vh;
   }
+}
+
+@media (max-width: 768px) {
   .skills__items {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (max-width: 768px) {
   .skills .text-secondary {
-    font-size: 3rem;
+    font-size: 1.5em;
   }
+}
+
+@media (max-width: 768px) {
   .contact__list {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 1024px) {
-  .about__bio {
-    font-size: 5rem;
-  }
+@media (max-width: 1024px) {
   .skills__items {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -466,6 +470,24 @@ body {
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 45%;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 69%;
+  }
+}
+
+@media (max-width: 1600px) {
+  body {
+    font-size: 90%;
+  }
 }
 
 h1, h2, h3 {
