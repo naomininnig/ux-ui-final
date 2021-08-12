@@ -229,7 +229,8 @@
 
 @media (max-width: 768px) {
   .about .jobs {
-    width: 55vw;
+    width: 75vw;
+    font-size: 1.7em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

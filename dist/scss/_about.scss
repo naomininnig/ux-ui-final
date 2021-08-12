@@ -44,7 +44,8 @@
         align-items: center;
 
         @media  (max-width:768px) {
-            width: 55vw;
+            width: 75vw;
+            font-size: 1.7em;
             display: flex;
             flex-direction: column;
             justify-content: center;
