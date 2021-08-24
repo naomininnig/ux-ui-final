@@ -3,8 +3,13 @@
     
 
     &__bio-image {
-        height: 30vh;
-        width: max-content;
+<<<<<<< HEAD
+        min-height: 30vh;
+        height: fit-content;
+=======
+        height: max-content;
+>>>>>>> f56901ca995ea02e99144e87882fa612e3718636
+        width: 100%;
         background: linear-gradient(to right, rgba(#272727 , 0.9), rgba(#272727 , 0.3)), url(../img/florian-olivo-JNz9bQD3Oio-unsplash.jpg) center top;
         background-size: cover;
         display: flex;
@@ -12,18 +17,17 @@
         align-items: center;
         justify-content: flex-end;
         line-height: 1.7;
-
+        
         p {
             margin: bottom 0.6em;
             font-size: 1.5em;
-            text-align: justify;
         }
     }
 
     &__bio {
         width: 80%;
         text-align: center;
-
+        margin: 2em 0;
         .text-secondary {
             padding-bottom: 1rem;
             font-size: 2em;
