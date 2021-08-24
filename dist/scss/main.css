@@ -206,7 +206,10 @@
 }
 
 .about__bio-image {
-  height: 30vh;
+  min-height: 30vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
   background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url(../img/florian-olivo-JNz9bQD3Oio-unsplash.jpg) center top;
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/florian-olivo-JNz9bQD3Oio-unsplash.jpg) center top;
@@ -230,12 +233,12 @@
 .about__bio-image p {
   margin: bottom 0.6em;
   font-size: 1.5em;
-  text-align: justify;
 }
 
 .about__bio {
   width: 80%;
   text-align: center;
+  margin: 2em 0;
 }
 
 .about__bio .text-secondary {
@@ -302,7 +305,7 @@
 
 @media (max-width: 768px) {
   .about__bio-image .about__bio {
-    font-size: 90%;
+    font-size: 70%;
   }
 }
 
